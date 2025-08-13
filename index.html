@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Duck Bucks Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Duck Bucks Tracker</h1>
+
+        <form id="entryForm">
+            <label>Date:</label>
+            <input type="date" id="date" required><br>
+
+            <label>Family Name:</label>
+            <input type="text" id="familyName" required><br>
+
+            <label> Child's Name:</label>
+            <input type="text" id="childName" required><br>
+
+            <label>Category</label>
+            <select id="category" required>
+                <option>At-Home Learning</option>
+                <option>Family Engagement</option>
+                <option>Home Connections</option>
+                <option>Donations</option>
+                <option>Attendance</option>
+                <option>Volunteer</option>
+                <option>Share Moments</option>
+            </select><br>
+
+            <label>Activity:</label>
+            <input type="text" id="activity" required><br>
+
+            <label>Bucks Earned:</label>
+            <input type="number" id="bucks" required><br>
+
+            <button type="submit">Add Entry</button>
+        </form>
+
+        <h2>Ledger</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Family</th>
+                    <th>Child</th>
+                    <th>Category</th>
+                    <th>Activity</th>
+                    <th>Bucks</th>
+                </tr>
+            </thead>
+            <tbody id="ledgerTable"></tbody>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+</html>
